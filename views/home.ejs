@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+    <h1>TODO APP</h1>
+    </div>
+    <hr>
+    <div class="form-content">
+        <form action="/create-task" method="post">
+            <div class="alig bg">
+        <label for="desc">DESCRIPTION</label>
+        <input type="text" id="desc" name="description" required placeholder="What do you need to do?"><br>
+        </div>
+        <hr>
+        <div class="ali">
+        <div id="category" class="bg">
+        <label for="category">CATEGORY</label>
+        <select name="category" id="category" required>
+            <option value="" disabled selected><b>Choose a category</b></option>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="leftt"></div>
+        <div id="duedate" class="bg">
+          <label for="duedate">DUE DATE</label>
+          <input type="date" id="duedate" name="duedate" required>
+        </div>
+    </div>
+          <hr>
+          <div class="button-group">
+          <button style="background-color: rgb(80, 76, 76);" type="submit"><i class="fa-sharp fa-solid fa-plus"></i>ADD TASK</button>
+          </form>
+          <form action="/delete-task" method="post">
+<button style="background-color: rgb(239, 50, 25);" type="submit"><i class="fa-solid fa-trash-can"></i>DELETE TASKS</button>
+</div>
+          <% for(let i of task){ %>
+            <hr>
+        <div class="tasks">
+            
+            <input type="checkbox" id="<%=i.description%>" name="id" value="<%=i._id%>"><label for="<%=i.description%>">
+                <div class="bset">
+                    <div><%=i.description%></div>
+                
+                <div style="margin: 0px; padding-right: 50px;">
+                    <%=i.category%></div>
+                </div>
+             <div style="display: flex; justify-content: flex-start; padding:10px 0px; color: rgb(160, 156, 156); font-weight: lighter;"> <i style="padding-top: 0px;" class="fa-solid fa-calendar-days"></i> <%=i.duedate  %></div></label>
+              
+        </div>
+        
+        <% } %>
+        </form>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/ce79f0f3af.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

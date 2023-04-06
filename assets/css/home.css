@@ -1,0 +1,146 @@
+body{
+    background-color: lightgrey;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(77, 76, 76);
+    text-align:center;
+}
+.main{
+    min-height: 80%;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    width: 50%;
+    background-color: white;
+   
+}
+.alig{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding:5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.alig input{
+    padding-left:0px;
+    padding: 8px;
+    padding-bottom: 0px;
+    border-width: 0px 0px 0px 0px;
+}
+.alig input,#duedate input:focus,#category select:focus{
+outline: none;
+}
+.form-content label{
+    color:rgb(116, 116, 116);
+    padding-left:10px;
+    font-size:14px;
+    font-weight: bold;
+}
+.ali{
+    margin-top: 0px;
+    width: 100%;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-start;
+}
+#category{
+    padding: 10px;
+    width: 50%;
+    padding-right:5px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+}
+#category select{
+    padding-top: 3px;
+    color:grey;
+    border-width: 0px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+#duedate{
+    padding: 10px;
+margin-left:10px;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+}
+.leftt{
+    border-left: 2px solid lightgray;
+    margin:0px;
+    padding: 0px;
+}
+#duedate input{
+    margin-left:0px;
+    margin-top:5px;
+    color:gray;
+    font-weight: bolder;
+    /* border-width: 0px; */
+    text-align:left;
+    padding:0px;
+    border-width: 0px 0px 2px 0px;
+    
+}
+hr{
+    margin:0px;
+    padding: 0px;
+}
+#category .leftt{
+    margin:0px;
+    padding:0px;
+}
+.form-content button{
+    margin:20px 2px;
+    width:165px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    border: none;
+    /* font-weight: bold; */
+}
+.form-content i{
+    text-align: left;
+    padding: 5px;
+    font-weight: bolder;
+}
+.button-group{
+    display: flex;
+    justify-content: center;
+}
+.tasks{
+    display: flex;
+    justify-content: flex-start;
+    padding:25px;
+    margin:0px;
+    width: 100%;
+}
+/* .tasks input[type="checkbox"]{
+    appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: rgb(77, 76, 76);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.35em;
+  transform: translateY(-0.075em);
+} */
+.tasks label{
+    width: 100%;
+}
+.bset{
+    display: flex;
+    justify-content: space-between;
+}
+.p1 .p2 .p3 .p4{
+    background-color: red;
+}
